@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Дмитрий Адамович - Backend Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="photo-placeholder">
+                    <img src="../static/me.jpg" alt="Foto">
+                </div>
+                <div class="header-info">
+                    <h1>Дмитрий Адамович</h1>
+                    <h2>Backend Developer</h2>
+                    <div class="contact-links">
+                        <a href="https://t.me/ensterb" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+                        <a href="mailto:adima3961@gmail.com"><i class="fas fa-envelope"></i> Email</a>
+                        <a href="https://www.linkedin.com/in/dmitry-adamovich2005/"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                        <a href="https://github.com/EnSterb"><i class="fab fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+                <button id="language-toggle" class="language-toggle">EN</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <h3>О себе</h3>
+            <p>Backend-разработчик с коммерческим опытом и достаточным количеством пет-проектов. Решал сложные задачи, где нужно копать вглубь: оптимизировать запросы, проектировать API или разбираться в чужом коде. Помимо используемого стека интересуюсь фронтенд разработкой. В некоммерческих проектах и хакатонах приобрел навыки аналитики и управления — умею быстро входить в контекст и вести команду к результату.</p>
+        </section>
+
+        <section class="skills">
+            <h3>Навыки</h3>
+            
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h4>Языки программирования</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h4>Базы данных</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-tags">
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h4>Технологии</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-tags">
+                        <span class="skill-tag">FastApi</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">JWT</span>
+                        <span class="skill-tag">Sqlalchemy</span>
+                        <span class="skill-tag">numpy</span>
+                        <span class="skill-tag">pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">DependencyInjector</span>
+                        <span class="skill-tag">Pydantic</span>
+                        <span class="skill-tag">Alembic</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h4>Инструменты</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-tags">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">MinIO s3</span>
+                        <span class="skill-tag">OpenSearch</span>
+                        <span class="skill-tag">Grafana</span>
+                        <span class="skill-tag">GitLab</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">RabbitMQ</span>
+                        <span class="skill-tag">Wolfram Mathematica</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <div class="skill-header">
+                    <h4>Языки</h4>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="skill-content">
+                    <div class="skill-tags" id="languages-container">
+                        <span class="skill-tag">Русский - Родной</span>
+                        <span class="skill-tag">Белорусский - Свободно</span>
+                        <span class="skill-tag">Английский - B1</span>
+                        <span class="skill-tag">Немецкий - B1</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience">
+            <h3>Опыт работы</h3>
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-item active">
+                        <h4>ООО "ТОДЭС"</h4>
+                        <h5>Backend Developer</h5>
+                        <p class="date">Июнь 2025 - Сейчас</p>
+                        <ul>
+                            <li>Реализовал модуль управления БД с поддержкой миграций</li>
+                            <li>Разработал систему валидации и сериализации данных с использованием Pydantic</li>
+                            <li>Спроектировал и внедрил REST API на FastAPI</li>
+                            <li>Интегрировал OpenSearch для полнотекстового поиска</li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>StartUp Space</h4>
+                        <h5>Developer, Analyst, Project Manager</h5>
+                        <p class="date">Апрель 2025 - Май 2025</p>
+                        <ul>
+                            <li>Анализ целевого продукта и написание требований</li>
+                            <li>Управление командой для реализации продукта в срок</li>
+                            <li>Настройка и дообучение локальных LLM</li>
+                            <li>Написание модуля для программы Blender</li>
+                        </ul>
+                    </div>
+                    <div class="carousel-item">
+                        <h4>Аналог игры Geoguesser</h4>
+                        <h5>Fullstack Developer</h5>
+                        <p class="date">Февраль 2025 - Апрель 2025</p>
+                        <ul>
+                            <li>Написание документации и проектирование БД</li>
+                            <li>Подключение внешних API</li>
+                            <li>Разработка на FastApi, Pydantic + MySQL</li>
+                            <li>Создание фронтенд части</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Дмитрий Адамович. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
