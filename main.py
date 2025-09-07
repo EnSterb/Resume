@@ -5,8 +5,10 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI(title="Portfolio Website")
 
+# Mount static files
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+# Setup templates
 templates = Jinja2Templates(directory="templates")
 
 @app.get("/", response_class=HTMLResponse)
@@ -16,8 +18,8 @@ async def read_root(request: Request):
         {"request": request}
     )
 
-def handler(request):
-    return app
+# This is the entry point for Vercel
+app_handler = app
 
 if __name__ == "__main__":
     import uvicorn
