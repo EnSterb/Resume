@@ -11,6 +11,7 @@ app.mount("/static", StaticFiles(directory="static"), name="static")
 # Setup templates
 templates = Jinja2Templates(directory="templates")
 
+
 @app.get("/", response_class=HTMLResponse)
 async def read_root(request: Request):
     return templates.TemplateResponse(
@@ -23,4 +24,4 @@ app_handler = app
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="0.0.0.0", port=8000)
+    uvicorn.run(app, host="localhost", port=8000)

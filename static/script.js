@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 company: "ООО 'ТОДЭС'",
                 position: "Backend Developer",
-                period: "Июнь 2025 - Сейчас",
+                period: "Июнь 2025 - Август 2025",
                 responsibilities: [
                     "Реализовал модуль управления БД с поддержкой миграций",
                     "Разработал систему валидации и сериализации данных с использованием Pydantic",
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
             {
                 company: "TODES LLC",
                 position: "Backend Developer",
-                period: "June 2025 - Present",
+                period: "June 2025 - August 2025",
                 responsibilities: [
                     "Implemented a database management module with migration support",
                     "Developed a data validation and serialization system using Pydantic",
